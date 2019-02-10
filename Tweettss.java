@@ -42,9 +42,10 @@ public class Tweettss {
 	//  and you an see the program sleep until the rate limits reset
 	private static final int MAX_QUERIES			= 200;
         private static Writer writer = null;
-	//	What we want to search for in this program.  Justin Bieber always returns as many results as you could
-	//	ever want, so it's safe to assume we'll get multiple pages back...
-	private static final String SEARCH_TERM			= "مساء";
+	//	key words search about it :  التعليم  ،الصيف ، التقنية# ، الرياضة#  ، الأم# 
+        // for get  more than 20000
+	private static final String SEARCH_TERM			= "الأم#";
+
 
 
 	/**
