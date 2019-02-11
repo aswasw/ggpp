@@ -12,6 +12,13 @@ with open('/Users/jodharb/Downloads/tweettss/tweetsoutput.txt','r') as f_input, 
 
         text = re.sub(r'[,]+', " ", text)
         text = re.sub(r'[:]+', " ", text)
+        
+         # remove dublicate letters like : مبروووووك= مبرووك
+        #text = re.sub(r'(.)\1+', r'\1', text)
+        text = re.sub(r'(.)\1+', r'\1\1',text)
+          
+         
+         
         print(text)
         #write to file
         f_output.write(text)
