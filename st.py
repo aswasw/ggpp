@@ -8,4 +8,5 @@ with open('infile','r') as f_input, open('outfile.txt', 'w') as f_output:
         sentence =u""+line
         for word in sentence.split(" "):
           stem = ar_stemmer.stemWord(word)
-          print(stem)
+          #print(stem)
+          f_output.write(stem+" ")
