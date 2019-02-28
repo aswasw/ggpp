@@ -37,15 +37,15 @@ class train_test_dataset_label:
 
         for tweets in self.get_train_positive(self):
 
-            training_dataset.append((tweets, 'POS'))
+            training_dataset.append((tweets, '1'))
 
         for tweets in self.get_train_negative(self):
 
-            training_dataset.append((tweets, 'NEG'))
+            training_dataset.append((tweets, '-1'))
 
         for tweets in self.get_train_neutral(self):
 
-            training_dataset.append((tweets, 'NEUTRAL'))
+            training_dataset.append((tweets, '0'))
 
         return training_dataset
 
